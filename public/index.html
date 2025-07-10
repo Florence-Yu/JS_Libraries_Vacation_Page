@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Europe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">EuroTrip</div>
+      <ul class="nav-links">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#map-section">Map</a></li>
+        <li><a href="#book">Book</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header>
+    <h1>Explore Beautiful Europe</h1>
+    <p>Find your next dream destination</p>
+  </header>
+
+  <!-- Image Carousel -->
+  <section class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide"><img src="assets/images/Paris.jpg" alt="Paris" /></li>
+        <li class="glide__slide"><img src="assets/images/Barcelona.jpg" alt="Barcelona" /></li>
+        <li class="glide__slide"><img src="assets/images/Italy.jpg" alt="Italy" /></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Destinations Grid -->
+  <section id="destinations" class="destinations">
+    <h2 data-aos="fade-up">Top Destinations</h2>
+    <div class="grid">
+      <div class="destination" data-aos="zoom-in">
+        <a href="assets/images/Paris_2.jpg" data-lightbox="europe" data-title="Paris, France">
+          <img src="assets/images/Paris_2.jpg" alt="Paris">
+        </a>
+        <h3>Paris, France</h3>
+      </div>
+      <div class="destination" data-aos="zoom-in">
+        <a href="assets/images/Barcelona.jpg" data-lightbox="europe" data-title="Barcelona, Spain">
+          <img src="assets/images/Barcelona.jpg" alt="Barcelona">
+        </a>
+        <h3>Barcelona, Spain</h3>
+      </div>
+      <div class="destination" data-aos="zoom-in">
+        <a href="assets/images/Rome.jpg" data-lightbox="europe" data-title="Rome, Italy">
+          <img src="assets/images/Rome.jpg" alt="Rome">
+        </a>
+        <h3>Rome, Italy</h3>
+      </div>
+      <div class="destination" data-aos="zoom-in">
+        <a href="assets/images/Amsterdam.jpg" data-lightbox="europe" data-title="Amsterdam, Netherlands">
+          <img src="assets/images/Amsterdam.jpg" alt="Amsterdam">
+        </a>
+        <h3>Amsterdam, Netherlands</h3>
+      </div>
+      <div class="destination" data-aos="zoom-in">
+        <a href="assets/images/Prague.jpg" data-lightbox="europe" data-title="Prague, Czech Republic">
+          <img src="assets/images/Prague.jpg" alt="Prague">
+        </a>
+        <h3>Prague, Czech Republic</h3>
+      </div>
+      <div class="destination" data-aos="zoom-in">
+        <a href="assets/images/Vienna.jpg" data-lightbox="europe" data-title="Vienna, Austria">
+          <img src="assets/images/Vienna.jpg" alt="Vienna">
+        </a>
+        <h3>Vienna, Austria</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Map -->
+  <section id="map-section" class="map-section" data-aos="fade-up">
+    <h2>Explore the Map</h2>
+    <div id="map"></div>
+  </section>
+
+  <!-- Book Section -->
+  <section id="book" class="book-section" data-aos="fade-up">
+    <h2>Book Your Trip</h2>
+    <p>Coming soon: Booking form or contact section!</p>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
